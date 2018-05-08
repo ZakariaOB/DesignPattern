@@ -43,22 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\CodeBuilder\CodeBuilder.cs" />
     <Compile Include="Builder\FluentBuilder\Person.cs" />
     <Compile Include="Builder\FluentBuilder\PersonNameBuilder.cs" />
     <Compile Include="Builder\HtmlBuilder.cs" />
     <Compile Include="Builder\HtmlElement.cs" />
+    <Compile Include="Factories\FactoryStartingPoint.cs" />
+    <Compile Include="IRun.cs" />
     <Compile Include="SOLID\LiskovSubstitutionPrinciple\Rectangle.cs" />
     <Compile Include="SOLID\LiskovSubstitutionPrinciple\Square.cs" />
     <Compile Include="SOLID\OpenClosedPrinciple\FilterDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOLID\SignleReponsability.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Builder\CodeBuilder\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
