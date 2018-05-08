@@ -14,17 +14,11 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             var builder = new Builder();
-            var person = builder.InCity("casa").WithJob("Ing").Called("Zakaria").Build();
+            var person = builder.InCity("casa").WithJob("Ingénieur").Called("Zakaria").Build();
 
             Console.ReadKey();
         }
 
-        public class Builder : PersonCityBuilder<Builder>
-        {
-            public Person Build()
-            {
-                return _person;
-            }
-        }
+        public class Builder : PersonCityBuilder<Builder>{}
     }
 }
