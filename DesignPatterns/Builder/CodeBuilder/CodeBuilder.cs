@@ -24,7 +24,7 @@ namespace DesignPatterns.Builder.CodeBuilder
 
         public override string ToString()
         {
-            StringBuilder 
+            return this.ToString(); 
         }
     }
 }

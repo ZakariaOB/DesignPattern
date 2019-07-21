@@ -42,5 +42,16 @@
         {
             return "To remove";
         }
+
+        public static string[] ToArray(this string text, char separator)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return string.Empty;
+            }
+
+            var tab = text.Split(new char[] { '-' });
+            return tab;
+        }
     }
 }

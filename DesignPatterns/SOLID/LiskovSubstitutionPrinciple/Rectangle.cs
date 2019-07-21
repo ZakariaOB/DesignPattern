@@ -8,16 +8,20 @@ namespace DesignPatterns.SOLID.LiskovSubstitutionPrinciple
 {
     public class Rectangle
     {
-        public int Height { get; set; }
 
+        public int Area => Height * Width;
+        public int Height { get; set; }
         public int Width { get; set; }
+
+        public bool IsSquare()
+        {
+            return this.Height == this.Width;
+        }
 
         public string AddDevelop1()
         {
             return "Dev 1";
         }
-
-        public int Area => Height * Width;
 
         public virtual void Show()
         {

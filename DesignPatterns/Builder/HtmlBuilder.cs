@@ -17,17 +17,21 @@
             root.HtmlElementList.Add(e);
         }
 
-        public override string ToString()
-        {
-            return root.ToString();
-        }
-
         public void Clear()
         {
             root = new HtmlElement
             {
                 Name = rootName
             };
+        }
+
+        /// <summary>
+        /// To string 
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return root.ToString();
         }
     }
 }
