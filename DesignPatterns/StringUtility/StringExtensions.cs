@@ -37,5 +37,10 @@
         {
             return "To update";
         }
+
+        public static string ToRemove()
+        {
+            return "To remove";
+        }
     }
 }
