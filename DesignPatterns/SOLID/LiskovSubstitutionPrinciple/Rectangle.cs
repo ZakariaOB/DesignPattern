@@ -23,5 +23,10 @@ namespace DesignPatterns.SOLID.LiskovSubstitutionPrinciple
         {
             Console.WriteLine("Show rectangle");
         }
+
+        public string AddDevelop2()
+        {
+            return "Dev 2";
+        }
     }
 }
