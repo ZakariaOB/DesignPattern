@@ -18,6 +18,11 @@ namespace DesignPatterns.SOLID.LiskovSubstitutionPrinciple
             return this.Height == this.Width;
         }
 
+        public string AddFix2()
+        {
+            return "Add fix 2";
+        }
+
         public virtual void Show()
         {
             Console.WriteLine("Show rectangle");
