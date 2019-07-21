@@ -15,7 +15,7 @@ namespace DesignPatterns
         {
             var builder = new Builder();
             var person = builder.InCity("casa").WithJob("Ingénieur").Called("Zakaria").Build();
-
+            var mohamed = builder.InCity("Marrakecj").WithJob("OK").Called("Zakaria").Build();
             Console.ReadKey();
         }
 

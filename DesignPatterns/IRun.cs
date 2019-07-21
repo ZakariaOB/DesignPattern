@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
     public interface IRun
     {
+        /// <summary>
+        /// Do run method
+        /// </summary>
         void DoRun();
     }
 }
