@@ -12,6 +12,11 @@ namespace DesignPatterns.SOLID.LiskovSubstitutionPrinciple
 
         public int Width { get; set; }
 
+        public string AddDevelop1()
+        {
+            return "Dev 1";
+        }
+
         public int Area => Height * Width;
 
         public virtual void Show()
