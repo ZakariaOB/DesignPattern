@@ -11,5 +11,20 @@
 
             return text.ToUpper();
         }
+
+        public static string WhatEver()
+        {
+            return "Zakaria Oka";
+        }
+
+        public static string ToUpperString2(this string text)
+        {
+            if (text == null)
+            {
+                return null;
+            }
+
+            return text.ToUpper();
+        }
     }
 }
