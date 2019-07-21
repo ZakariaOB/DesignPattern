@@ -27,5 +27,10 @@
 
             return text.ToUpper();
         }
+
+        public static string ToRemove()
+        {
+            return "To remove";
+        }
     }
 }
