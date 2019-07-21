@@ -4,8 +4,8 @@
     {
         public static string ToWhatever(this string text)
         {
-            var next = "Okpppppppppammaaa";
-            return text + next;
+            var next = "Last comment";
+            return text + next + "Zakaria";
         }
 
         public static string ToUpperString(this string text)
@@ -31,6 +31,11 @@
         public static string ToRemove()
         {
             return "To remove";
+        }
+
+        public static string toUpdate()
+        {
+            return "To update";
         }
     }
 }
