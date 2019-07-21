@@ -22,9 +22,5 @@ namespace DesignPatterns.Builder.CodeBuilder
             return this;
         }
 
-        public override string ToString()
-        {
-            StringBuilder 
-        }
     }
 }
