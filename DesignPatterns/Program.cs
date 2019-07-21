@@ -1,11 +1,5 @@
-﻿using DesignPatterns.Builder;
-using DesignPatterns.Builder.FluentBuilder;
-using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
+﻿using DesignPatterns.Builder.FluentBuilder;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
@@ -14,11 +8,16 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             var builder = new Builder();
-            var person = builder.InCity("casa").WithJob("Ingénieur").Called("Zakaria").Build();
-            var mohamed = builder.InCity("Marrakecj").WithJob("OK").Called("Zakaria").Build();
+            AllPersons(builder);
             Console.ReadKey();
         }
 
         public class Builder : PersonCityBuilder<Builder>{}
+
+        public static void AllPersons(Builder builder)
+        {
+            var person = builder.InCity("casa").WithJob("Ingénieur").Called("Zakaria").Build();
+            var mohamed = builder.InCity("Marrakecj").WithJob("OK").Called("Zakaria").Build();
+        }
     }
 }

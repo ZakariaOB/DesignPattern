@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.SOLID
 {
-    class SignleReponsability
+    public class SignleReponsability
     {
+        /// <summary>
+        /// Ctor
+        /// </summary>
+        public SignleReponsability()
+        {
+
+        }
     }
 }
