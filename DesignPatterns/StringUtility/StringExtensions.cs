@@ -27,10 +27,10 @@
 
             return text.ToUpper();
         }
-
-        public static string ToRemove()
+        
+        public static string ToAdd()
         {
-            return "To remove";
+            return "To add";
         }
 
         public static string toUpdate()
